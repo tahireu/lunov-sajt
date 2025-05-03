@@ -1,0 +1,72 @@
+<!-- Ovo je HTML programski jezik koji razumeju browseri, kao sto su Chrome, Firefox, Safari... -->
+<!-- HTML sluzi da kaze browseru koji sadrzaj sajt treba da ima -->
+<head>
+  <title>Lunov Sajt</title>
+  <link rel="icon" href="./images/logo-lun.png" type="image/png">
+</head>
+<img class="logo" src="./images/logo-lun.png">
+<h1>Lunov prvi sajt</h1>
+<p>Zdravo! Ja sam Lun i imam 6 godina.</p>
+<p>Ovo je moj prvi sajt! Napravio sam ga uz pomoć mog tate koji me je učio, i uz pomoć ChatGPT-a kog sam mnogo toga pitao.</p>
+<br><br>
+<img class="portret" src="./images/lun.jpg" />
+<br><br><br>
+<h2>Ovo je moja omiljena pesma</h2>
+<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/6JymsaWDHk2Yj4e0yNBIFH?utm_source=generator" width="600" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+<br><br><br>
+<h2>Ovo su moje omiljene knjige</h2>
+<ul>
+  <li>Asteriks i Obeliks</li>
+  <li>Genijalni izumi Adama Keja</li>
+  <li>Mali zabavnik</li>
+</ul>
+<br><br><br>
+<h2>Danas je:</h2>
+<p id="datum"></p>
+<script>
+  const danas = new Date();
+  document.getElementById('datum').innerText = danas.toLocaleDateString();
+</script>
+<br><br><br>
+<h2>Želiš da se igraš sa mnom?</h2>
+<button onclick="window.location.href='https://www.minecraft.net/en-us/about-minecraft';">Minecraft!</button>
+<br><br><br><br><br><br>
+
+<!-- Ovo je isto CSS programski jezik koji razumeju browseri, kao sto su Chrome, Firefox, Safari... -->
+<!-- CSS sluzi da kaze browseru kako sajt treba izgleda, koje boje treba da ima... -->
+<style>
+  body {
+    background-color: green;
+    color: #572a00;
+    text-align: center;
+  }
+
+  ul {
+    display: inline-block;
+    text-align: left;
+  }
+
+  .logo {
+    width: 400px;
+    height: auto;
+  }
+
+  .portret {
+    width: 500px;
+    height: auto;
+  }
+
+  button {
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    border: 3px solid orange;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+
+  button:hover {
+    background-color: gray;
+  }
+</style>
